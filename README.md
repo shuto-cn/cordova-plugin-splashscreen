@@ -42,10 +42,10 @@ description: Control the splash screen for your app.
 
 ### config.xml
 
-- `FadeSplashFullScreen` (boolean, default to `true`). 在app未设置全屏的情况下FadeSplash是否全屏显示
+- `SplashFullScreen` (boolean, default to `true`). 在app未设置全屏的情况下FadeSplash是否全屏显示
 
     ```xml
-    <preference name="FadeSplashFullScreen" value="true" />
+    <preference name="SplashFullScreen" value="true" />
     ```
 ## Other
 

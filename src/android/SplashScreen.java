@@ -221,11 +221,7 @@ public class SplashScreen extends CordovaPlugin {
         cordova.getActivity().runOnUiThread(new Runnable() {
             public void run() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    int color = Color.parseColor("#f8f8f9");
-                    float[] hsv = new float[3];
-                    Color.colorToHSV(color, hsv);
-                    hsv[2] = 0.5f;
-                    cordova.getActivity().getWindow().setNavigationBarColor(Color.HSVToColor(hsv));
+                    cordova.getActivity().getWindow().setNavigationBarColor(Color.parseColor("#000000"));
                 }
                 if (splashDialog != null && splashImageView != null && splashDialog.isShowing()) {//check for non-null splashImageView, see https://issues.apache.org/jira/browse/CB-12277
                     final int fadeSplashScreenDuration = getFadeDuration();
